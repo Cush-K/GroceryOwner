@@ -6,8 +6,35 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.item-list img{
+  width: 100%;
+  height: auto;
+}
+.item-list{
+  justify-content: space-between;
+  padding: 1em;
+  margin: 1em;
+  align-items:flex-start;
+  border: 1px solid black;
+  width: 15em;
+}
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.item-card{
+  width: 20em;
+  height: auto;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid black;
+}
+.item-card img{
+  width: 100%;
+  height: auto;
 }

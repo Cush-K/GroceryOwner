@@ -16,7 +16,7 @@ function ItemCard(){
     .catch(error => console.error(error))
 
     return(
-        <div>
+        <div className="item-card">
             <h1>{items.name}</h1>
             <img src={items.image} alt="product" />
             <h2>Price: {items.price}</h2>
