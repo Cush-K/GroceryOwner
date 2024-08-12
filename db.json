@@ -1,0 +1,95 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "Apples",
+        "category": "Fruits",
+        "price": 1.2,
+        "quantity": 100,
+        "description": "Fresh red apples",
+        "image": "https://images.unsplash.com/photo-1498579397066-228MHxzZWFyY2h8NHx8Z3JvY2VyeXxlbnwwfHwwfHx8MA%3D%3D"
+      },
+      {
+        "id": "2",
+        "name": "Bananas",
+        "category": "Fruits",
+        "price": 0.5,
+        "quantity": 150,
+        "description": "Ripe yellow bananas",
+        "image": "https://images.unsplash.com/photo-1526470498-9ae738MHxzZWFyY2h8M3x8Z3JvY2VyeXxlbnwwfHwwfHx8MA%3D%3D"
+      },
+      {
+        "id": "3",
+        "name": "Oranges",
+        "category": "Fruits",
+        "price": 1.0,
+        "quantity": 120,
+        "description": "Juicy oranges",
+        "image": "https://plus.unsplash.com/premium_photo-1686878940-MzY3MHxzZWFyY2h8NXx8Z3JvY2VyeXxlbnwwfHwwfHx8MA%3D%3D"
+      },
+      {
+        "id": "4",
+        "name": "Carrots",
+        "category": "Vegetables",
+        "price": 0.8,
+        "quantity": 80,
+        "description": "Crunchy carrots",
+        "image": "https://images.unsplash.com/photo-1516594798947-e6b9d8MHxzZWFyY2h8Mnx8Z3JvY2VyeXxlbnwwfHwwfHx8MA%3D%3D"
+      },
+      {
+        "id": "5",
+        "name": "Potatoes",
+        "category": "Vegetables",
+        "price": 0.6,
+        "quantity": 200,
+        "description": "Starchy potatoes",
+        "image": "https://plus.unsplash.com/premium_photo-1687131786-DB8MHxzZWFyY2h8MTN8fGdyb2Nlcnl8ZW58MHx8MHx8fDA%3D"
+      },
+      {
+        "id": "6",
+        "name": "Chicken Breast",
+        "category": "Meat",
+        "price": 5.0,
+        "quantity": 50,
+        "description": "Lean chicken breast",
+        "image": "https://media.istockphoto.com/id/1757979214/photo/chicken-breast.jpg"
+      },
+      {
+        "id": "7",
+        "name": "Salmon",
+        "category": "Fish",
+        "price": 10.0,
+        "quantity": 30,
+        "description": "Fresh salmon fillets",
+        "image": "https://media.istockphoto.com/id/1497211470/photo/salmon.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Eggs",
+        "category": "Dairy",
+        "price": 2.5,
+        "quantity": 200,
+        "description": "Organic eggs",
+        "image": "https://media.istockphoto.com/id/1449032425/photo/eggs.jpg"
+      },
+      {
+        "id": "9",
+        "name": "Milk",
+        "category": "Dairy",
+        "price": 1.5,
+        "quantity": 100,
+        "description": "Whole milk",
+        "image": "https://media.istockphoto.com/id/1461078656/photo/milk.jpg"
+      },
+      {
+        "id": "10",
+        "name": "Cheese",
+        "category": "Dairy",
+        "price": 4.0,
+        "quantity": 75,
+        "description": "Aged cheddar cheese",
+        "image": "https://media.istockphoto.com/id/1934743242/photo/cheese.jpg"
+      }
+    ]
+  }
+  
