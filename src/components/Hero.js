@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Home from "../pages/Home";
+import NavBar from "./NavBar";
 function Hero() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ function Hero() {
   return (
     <div>
       {isLoggedIn ? (
-        <Home logout={logout} />
+        <NavBar logout={logout} />
       ) : (
         <div className="hero">
           <h1>Welcome to Our Online Store</h1>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ItemList from "../components/itemList";
+import NavBar from "../components/NavBar";
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -13,6 +14,7 @@ function Home() {
 
   return (
     <div>
+      <NavBar />
       <div className="App">
         {products.map((product) => (
           <ItemList
