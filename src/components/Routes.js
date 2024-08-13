@@ -4,6 +4,7 @@ import ItemCard from './ItemCard';
 import Hero from './Hero';
 import Login from './Login';
 import Signup from './Signup';
+import AddItem from './AddItem';
 
 const routes = [
     {
@@ -25,7 +26,11 @@ const routes = [
     {
         path: "/items/:id",
         element: <ItemCard />
-    }
+    },
+    {
+        path: "/add",
+        element: <AddItem />
+    },
 ]
 
 export default routes;
