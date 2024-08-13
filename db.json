@@ -1,94 +1,94 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "Apples",
-        "category": "Fruits",
-        "price": 1.2,
-        "quantity": 100,
-        "description": "Fresh red apples",
-        "image": "https://images.pexels.com/photos/574919/pexels-photo-574919.jpeg"
-      },
-      {
-        "id": 2,
-        "name": "Bananas",
-        "category": "Fruits",
-        "price": 0.5,
-        "quantity": 150,
-        "description": "Ripe bananas",
-        "image": "https://media.istockphoto.com/photos/raw-organic-bunch-of-bananas-picture-id509533014"
-      },
-      {
-        "id": 3,
-        "name": "Oranges",
-        "category": "Fruits",
-        "price": 1.0,
-        "quantity": 80,
-        "description": "Juicy oranges",
-        "image": "https://images.pexels.com/photos/2135677/pexels-photo-2135677.jpeg"
-      },
-      {
-        "id": 4,
-        "name": "Carrots",
-        "category": "Vegetables",
-        "price": 0.8,
-        "quantity": 200,
-        "description": "Fresh orange carrots",
-        "image": "https://images.pexels.com/photos/3650647/pexels-photo-3650647.jpeg"
-      },
-      {
-        "id": 5,
-        "name": "Potatoes",
-        "category": "Vegetables",
-        "price": 0.6,
-        "quantity": 120,
-        "description": "Nutritious potatoes",
-        "image": "https://images.pexels.com/photos/144248/pexels-photo-144248.jpeg"
-      },
-      {
-        "id": 6,
-        "name": "Chicken Breast",
-        "category": "Meat",
-        "price": 5.0,
-        "quantity": 50,
-        "description": "Tender chicken breast",
-        "image": "https://images.pexels.com/photos/5769385/pexels-photo-5769385.jpeg"
-      },
-      {
-        "id": 7,
-        "name": "Salmon",
-        "category": "Seafood",
-        "price": 10.0,
-        "quantity": 30,
-        "description": "Fresh salmon",
-        "image": "https://images.pexels.com/photos/2871756/pexels-photo-2871756.jpeg"
-      },
-      {
-        "id": 8,
-        "name": "Eggs",
-        "category": "Dairy",
-        "price": 2.5,
-        "quantity": 200,
-        "description": "Farm fresh eggs",
-        "image": "https://images.pexels.com/photos/162712/pexels-photo-162712.jpeg"
-      },
-      {
-        "id": 9,
-        "name": "Milk",
-        "category": "Dairy",
-        "price": 1.5,
-        "quantity": 100,
-        "description": "Fresh milk",
-        "image": "https://images.pexels.com/photos/5946717/pexels-photo-5946717.jpeg"
-      },
-      {
-        "id": 10,
-        "name": "Cheese",
-        "category": "Dairy",
-        "price": 3.0,
-        "quantity": 70,
-        "description": "Delicious feta cheese",
-        "image": "https://images.pexels.com/photos/306801/pexels-photo-306801.jpeg"
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": 1,
+      "name": "Apples",
+      "category": "Fruits",
+      "price": 1.2,
+      "quantity": 100,
+      "description": "Fresh red apples",
+      "image": "https://images.pexels.com/photos/574919/pexels-photo-574919.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Potatoes",
+      "category": "Fruits",
+      "price": 0.5,
+      "quantity": 150,
+      "description": "Ripe bananas",
+      "image": "https://cdn.pixabay.com/photo/2019/07/12/02/19/potatoes-4331742_1280.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Oranges",
+      "category": "Fruits",
+      "price": 1.0,
+      "quantity": 80,
+      "description": "Juicy oranges",
+      "image": "https://images.pexels.com/photos/2135677/pexels-photo-2135677.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Carrots",
+      "category": "Vegetables",
+      "price": 0.8,
+      "quantity": 200,
+      "description": "Fresh orange carrots",
+      "image": "https://images.pexels.com/photos/3650647/pexels-photo-3650647.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Bananas",
+      "category": "Vegetables",
+      "price": 0.6,
+      "quantity": 120,
+      "description": "Nutritious potatoes",
+      "image": "https://media.istockphoto.com/id/1494763483/photo/banana-concept.jpg?s=2048x2048&w=is&k=20&c=oz3Xd4SKjKrMrc2JX0pqworegOshV9YMl2GUbpVI338="
+    },
+    {
+      "id": 6,
+      "name": "Chicken Breast",
+      "category": "Meat",
+      "price": 5.0,
+      "quantity": 50,
+      "description": "Tender chicken breast",
+      "image": "https://images.pexels.com/photos/5769385/pexels-photo-5769385.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Salmon",
+      "category": "Seafood",
+      "price": 10.0,
+      "quantity": 30,
+      "description": "Fresh salmon",
+      "image": "https://images.pexels.com/photos/2871756/pexels-photo-2871756.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Eggs",
+      "category": "Dairy",
+      "price": 2.5,
+      "quantity": 200,
+      "description": "Farm fresh eggs",
+      "image": "https://cdn.pixabay.com/photo/2020/03/05/07/26/egg-4903676_640.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Milk",
+      "category": "Dairy",
+      "price": 1.5,
+      "quantity": 100,
+      "description": "Fresh milk",
+      "image": "https://images.pexels.com/photos/5946717/pexels-photo-5946717.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Cheese",
+      "category": "Dairy",
+      "price": 3.0,
+      "quantity": 70,
+      "description": "Delicious feta cheese",
+      "image": "https://images.pexels.com/photos/306801/pexels-photo-306801.jpeg"
+    }
+  ]
+}
