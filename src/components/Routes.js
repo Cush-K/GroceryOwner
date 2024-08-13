@@ -4,8 +4,7 @@ import ItemCard from './ItemCard';
 import Hero from './Hero';
 import Login from './Login';
 import Signup from './Signup';
-import AddItem from './AddItem';
-
+import Seller from '../pages/Seller';
 const routes = [
     {
         path: "/home",
@@ -28,9 +27,9 @@ const routes = [
         element: <ItemCard />
     },
     {
-        path: "/add",
-        element: <AddItem />
-    },
+        path: "/seller",
+        element: <Seller />
+    }
 ]
 
 export default routes;

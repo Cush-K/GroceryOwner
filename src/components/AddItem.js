@@ -1,71 +1,106 @@
 import React, { useState } from "react"
 
-function AddItem({onAddItem, itemName, itemCategory, itemPrice, itemQuantity, itemDescription, itemImage}) {
-    const[name, setName]=useState('')
-    const[category, setCategory]=useState('Select Category')
-    const[price, setPrice]=useState('')
-    const[quantity, setQuantity]=useState('')
-    const[description, setDescription]=useState('')
-    const[image, setImage]=useState('')
-    
-   
-    
-    function handleSubmit(e){
+function AddItem({ onAddItem }) {
+    const [name, setName] = useState('')
+    const [category, setCategory] = useState('Select Category')
+    const [price, setPrice] = useState('')
+    const [quantity, setQuantity] = useState('')
+    const [description, setDescription] = useState('')
+    const [image, setImage] = useState('')
+
+
+    function handleSubmit(e) {
         e.preventDefault();
-        const newItem={
-        name:name , 
-        category:category,
-        price:price,
-        quantity:quantity,
-        description:description,
-        image:image,
+        const newItem = {
+            name,
+            category,
+            price,
+            quantity,
+            description,
+            image,
+        };
 
-        }
-
-        fetch ('http://localhost:4000/products',{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json",
+        fetch('http://localhost:4000/products', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
             },
-            body:JSON.stringify(newItem)
+            body: JSON.stringify(newItem)
         })
-        .then(response => response.json() )
-        .then(data => onAddItem(data))
+            .then(response => response.json())
+            .then(data => onAddItem(data));
+
+        setName("");
+        setCategory("Select Category");
+        setPrice("");
+        setQuantity("");
+        setDescription("");
+        setImage("");
 
     }
 
-   
-
-
     return (
         <form onSubmit={handleSubmit}>
-        
-            <label htmlFor="name" >Name</label>
-            <input type="text" placeholder="Name" name="name"  onChange={(e) => setName(e.target.value)}  />
-{/* 
-            <label htmlFor="category" >Category</label>
-            <select name="category" value={itemCategory} onChange={(e) => setCategory(e.target.value)} >
+            <h2>Add New Item</h2>
+            <label htmlFor="name">Name</label>
+            <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+            />
+
+            <label htmlFor="category">Category</label>
+            <select
+                name="category"
+                value={category}
+                onChange={(e) => setCategory(e.target.value)}
+            >
                 <option value="Select Category">Select Category</option>
-            {itemCategory.map((category, index) =>(
-                <option key={index}>{category}</option>
-            ) )}
-            </select> */}
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Books">Books</option>
+                <option value="Accessories">Accessories</option>
+            </select>
 
-            
+            <label htmlFor="price">Price</label>
+            <input
+                type="text"
+                placeholder="Price"
+                name="price"
+                value={price}
+                onChange={(e) => setPrice(e.target.value)}
+            />
 
-            <label htmlFor="price" >Price</label>
-            <input type="text" placeholder="Price" name="price"  onChange={(e) => setPrice(e.target.value)}  />
+            <label htmlFor="quantity">Quantity</label>
+            <input
+                type="text"
+                placeholder="Quantity"
+                name="quantity"
+                value={quantity}
+                onChange={(e) => setQuantity(e.target.value)}
+            />
 
-            <label htmlFor="quantity" >Quantity</label>
-            <input type="text" placeholder="Quantity" name="quantity"  onChange={(e) => setQuantity(e.target.value)} />
+            <label htmlFor="description">Description</label>
+            <input
+                type="text"
+                placeholder="Description"
+                name="description"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+            />
 
-            <label htmlFor="description" >Description</label>
-            <input type="text" placeholder="Description" name="description"  onChange={(e) => setDescription(e.target.value)}  />
+            <label htmlFor="image">Image</label>
+            <input
+                type="text"
+                placeholder="Image URL"
+                name="image"
+                value={image}
+                onChange={(e) => setImage(e.target.value)}
+            />
 
-            <label htmlFor="image" >Image</label>
-            <input type="text" placeholder="Image" name="image"  onChange={(e) => setImage(e.target.value)} /> 
-
-            <button type="submit">AddItem</button>
+            <button type="submit">Add Item</button>
         </form>
 
     )

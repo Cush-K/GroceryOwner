@@ -91,12 +91,21 @@
       "image": "https://images.pexels.com/photos/306801/pexels-photo-306801.jpeg"
     },
     {
-      "id": "e9d4",
-      "name": "",
-      "category": "Select Category",
-      "price": "",
-      "quantity": "",
-      "description": "",
+      "id": "e921",
+      "name": "Isca",
+      "category": "Clothing",
+      "price": "2000",
+      "quantity": "345",
+      "description": "goats",
+      "image": ""
+    },
+    {
+      "id": "e6f6",
+      "name": "Isca",
+      "category": "Clothing",
+      "price": "2000",
+      "quantity": "345",
+      "description": "sdfghjkl",
       "image": ""
     }
   ]

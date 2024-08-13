@@ -11,29 +11,27 @@ function Seller(){
       .catch((error) => console.error(error));
   }, []);
     
-   function handleAddItem(newItem){
-        setProducts([...products, newItem])
-   }
+  function handleAddItem(newItem) {
+    setProducts((prevProducts) => [...prevProducts, newItem]);
+  }
 
   return (
-    <div>
-    {
-        products.map(product=>(
-            <AddItem 
-                key={product.id}
-                onAddItem = {handleAddItem}
-                itemName={product.name}
-                itemCategory={product.category}
-                itemPrice={product.price}
-                itemQuantity={product.quantity}
-                itemDescription={product.description}
-                itemImage={product.image}
-             />
-            
-
-        ))
-    }
-    
+     <div>
+      <h1>Seller Dashboard</h1>
+      <AddItem onAddItem={handleAddItem}/>
+      <div>
+      <h2>Existing Products</h2>
+      {products.map((product) => (
+          <div key={product.id}>
+            <h3>{product.name}</h3>
+            <p>Category: {product.category}</p>
+            <p>Price: {product.price}</p>
+            <p>Quantity: {product.quantity}</p>
+            <p>Description: {product.description}</p>
+            {/* <img src={product.image} alt={product.name} /> */}
+          </div>
+        ))}
+     </div>
      </div>
   )
 }
