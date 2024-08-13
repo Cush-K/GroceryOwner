@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Navigate, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Home from "../pages/Home";
 function Hero() {
@@ -15,11 +15,11 @@ function Hero() {
 
   useEffect(() => {
     if (isLoggedIn) {
-      navigate("/");
+      navigate("/home");
     } else {
-      navigate("/landing");
+      navigate("/");
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, navigate]);
   return (
     <div>
       {isLoggedIn ? (

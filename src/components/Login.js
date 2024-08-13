@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useOutletContext } from "react-router-dom";
 
 function Login() {
@@ -38,7 +37,10 @@ function Login() {
           value={formData.password}
           onChange={handleChange}
         />
-        <button type="submit">Login</button>
+        <Link to="/home">
+           <button type="button">Login</button>
+        </Link>
+       
       </form>
       <p>
         Don't have an account? <Link to="/signup">Sign Up</Link>

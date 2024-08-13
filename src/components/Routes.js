@@ -7,11 +7,11 @@ import Signup from './Signup';
 
 const routes = [
     {
-        path: "/",
+        path: "/home",
         element: <Home />
     },
     {
-        path: "/landing",
+        path: "/",
         element: <Hero />
     },
     {

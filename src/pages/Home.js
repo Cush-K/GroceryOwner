@@ -12,17 +12,21 @@ function Home() {
   }, []);
 
   return (
-    <div className="App">
-      {products.map((product) => (
-        <ItemList
-          key={product.id}
-          id={product.id}
-          name={product.name}
-          image={product.image}
-          price={product.price}
-        />
-      ))}
+    <div>
+      <div className="App">
+        {products.map((product) => (
+          <ItemList
+            key={product.id}
+            id={product.id}
+            name={product.name}
+            image={product.image}
+            price={product.price}
+          />
+        ))}
+      </div>
+
     </div>
+
   );
 }
 
