@@ -37,10 +37,8 @@ function Login() {
           value={formData.password}
           onChange={handleChange}
         />
-        <Link to="/home">
-           <button type="button">Login</button>
-        </Link>
-       
+         <button type="submit">Login</button>
+              
       </form>
       <p>
         Don't have an account? <Link to="/signup">Sign Up</Link>

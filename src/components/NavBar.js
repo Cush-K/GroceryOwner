@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
-function NavBar(){ 
+import { NavLink,  } from "react-router-dom";
+function NavBar({logout, name}){ 
+
 return(
         <nav className="navbar">
             <ul>
@@ -8,10 +9,8 @@ return(
                 <li><NavLink to="/about">About</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
                 <li><NavLink to="/seller">Dashboard</NavLink></li>
-                <Link to="/">
-                 <button type="button">Logout</button>
-                </Link>
-                
+                <li>{name}</li>
+                <button type="button" onClick={logout} >Logout</button>
             </ul>
         </nav>
     )

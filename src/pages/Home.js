@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import ItemList from "../components/itemList";
 import NavBar from "../components/NavBar";
 
-function Home() {
+function Home({logout}) {
   const [products, setProducts] = useState([]);
-
+  
   useEffect(() => {
     fetch(`http://localhost:4000/products`)
       .then((resp) => resp.json())
@@ -12,9 +12,13 @@ function Home() {
       .catch((error) => console.error(error));
   }, []);
 
+  function onLogOut(){
+    logout()
+  }
+
   return (
     <div>
-      <NavBar />
+      <NavBar logout ={onLogOut}/>
       <div className="App">
         {products.map((product) => (
           <ItemList

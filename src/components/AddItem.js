@@ -3,7 +3,7 @@ import React, { useState } from "react"
 function AddItem({ onAddItem, products }) {
     const [name, setName] = useState('')
     const [category, setCategory] = useState('Select Category')
-    const [price, setPrice] = useState('')
+    const [price, setPrice] = useState()
     const [quantity, setQuantity] = useState('')
     const [description, setDescription] = useState('')
     const [image, setImage] = useState('')
@@ -12,12 +12,13 @@ function AddItem({ onAddItem, products }) {
     function handleSubmit(e) {
         e.preventDefault();
         const newItem = {
-            name,
-            category,
-            price,
-            quantity,
-            description,
-            image,
+            id: (products.length + 1).toString(),
+            name: name,
+            category: category,
+            price: parseFloat(price),
+            quantity: parseFloat(quantity),
+            description: description,
+            image: image,
         };
 
         fetch('http://localhost:4000/products', {
@@ -36,7 +37,6 @@ function AddItem({ onAddItem, products }) {
         setQuantity("");
         setDescription("");
         setImage("");
-
     }
 
     function getUniqueCategories(products) {
