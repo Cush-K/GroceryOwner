@@ -18,7 +18,7 @@ function Seller(){
   return (
      <div>
       <h1>Seller Dashboard</h1>
-      <AddItem onAddItem={handleAddItem}/>
+      <AddItem onAddItem={handleAddItem} products={products}/>
       <div>
       <h2>Existing Products</h2>
       {products.map((product) => (

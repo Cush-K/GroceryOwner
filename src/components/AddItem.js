@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-function AddItem({ onAddItem }) {
+function AddItem({ onAddItem, products }) {
     const [name, setName] = useState('')
     const [category, setCategory] = useState('Select Category')
     const [price, setPrice] = useState('')
@@ -39,6 +39,14 @@ function AddItem({ onAddItem }) {
 
     }
 
+    function getUniqueCategories(products) {
+        const categories = products.map(product => product.category);
+        return [...new Set(categories)];
+    }
+
+
+    const uniqueCategories = getUniqueCategories(products);
+
     return (
         <form onSubmit={handleSubmit}>
             <h2>Add New Item</h2>
@@ -58,10 +66,10 @@ function AddItem({ onAddItem }) {
                 onChange={(e) => setCategory(e.target.value)}
             >
                 <option value="Select Category">Select Category</option>
-                <option value="Electronics">Electronics</option>
-                <option value="Clothing">Clothing</option>
-                <option value="Books">Books</option>
-                <option value="Accessories">Accessories</option>
+                {uniqueCategories.map((category, index) => (
+                    <option key={index} value={category}>{category}</option>
+                ))}
+
             </select>
 
             <label htmlFor="price">Price</label>
