@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
 
 function Login() {
-  const login = useOutletContext();
+  const contextData = useOutletContext();
+  const [users, setUsers] = useState(null)
+
+  useEffect(() => {
+    fetch(`http://localhost:4000/users`)
+     .then((resp) => resp.json())
+     .then(data => setUsers(data))
+  }, [])
+
   const [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -18,7 +26,10 @@ function Login() {
 
   function handleLogin(e) {
     e.preventDefault();
-    login();
+
+    const authenticated = users.some(user => user.username === formData.username && user.password === formData.password);
+    
+     authenticated ? contextData.login(): console.error("Input the Correct Details")
   }
 
   return (
@@ -28,12 +39,14 @@ function Login() {
         <input
           type="text"
           placeholder="Username"
+          name="username"
           value={formData.username}
           onChange={handleChange}
         />
         <input
           type="password"
           placeholder="Password"
+          name="password"
           value={formData.password}
           onChange={handleChange}
         />

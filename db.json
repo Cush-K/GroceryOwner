@@ -90,5 +90,13 @@
       "description": "Delicious feta cheese",
       "image": "https://images.pexels.com/photos/306801/pexels-photo-306801.jpeg"
     }
+  ],
+  "users":[
+    {
+      "id": "1",
+      "username": "Johnoe",
+      "email": "john.doe@example.com",
+      "password": "password123"
+    }
   ]
 }
