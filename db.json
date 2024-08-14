@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Apples",
       "category": "Fruits",
-      "price": 1.2,
+      "price": 250,
       "quantity": 100,
       "description": "Fresh red apples",
       "image": "https://images.pexels.com/photos/574919/pexels-photo-574919.jpeg"
@@ -13,8 +13,8 @@
       "id": "2",
       "name": "Potatoes",
       "category": "Fruits",
-      "price": 0.5,
-      "quantity": 150,
+      "price": 400,
+      "quantity": 200,
       "description": "Ripe bananas",
       "image": "https://cdn.pixabay.com/photo/2019/07/12/02/19/potatoes-4331742_1280.jpg"
     },
@@ -23,7 +23,7 @@
       "name": "Oranges",
       "category": "Fruits",
       "price": 1,
-      "quantity": 80,
+      "quantity": 800,
       "description": "Juicy oranges",
       "image": "https://images.pexels.com/photos/2135677/pexels-photo-2135677.jpeg"
     },
@@ -31,7 +31,7 @@
       "id": "4",
       "name": "Carrots",
       "category": "Vegetables",
-      "price": 0.8,
+      "price": 350,
       "quantity": 200,
       "description": "Fresh orange carrots",
       "image": "https://images.pexels.com/photos/3650647/pexels-photo-3650647.jpeg"
@@ -40,7 +40,7 @@
       "id": "5",
       "name": "Bananas",
       "category": "Vegetables",
-      "price": 0.6,
+      "price": 300,
       "quantity": 120,
       "description": "Nutritious potatoes",
       "image": "https://media.istockphoto.com/id/1494763483/photo/banana-concept.jpg?s=2048x2048&w=is&k=20&c=oz3Xd4SKjKrMrc2JX0pqworegOshV9YMl2GUbpVI338="
@@ -49,63 +49,45 @@
       "id": "6",
       "name": "Chicken Breast",
       "category": "Meat",
-      "price": 5,
-      "quantity": 50,
+      "price": 500,
+      "quantity": 700,
       "description": "Tender chicken breast",
-      "image": "https://images.pexels.com/photos/5769385/pexels-photo-5769385.jpeg"
+      "image": "https://images.pexels.com/photos/3688/food-dinner-lunch-chicken.jpg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       "id": "7",
       "name": "Salmon",
       "category": "Seafood",
-      "price": 10,
+      "price": 1000,
       "quantity": 30,
       "description": "Fresh salmon",
-      "image": "https://images.pexels.com/photos/2871756/pexels-photo-2871756.jpeg"
+      "image": "https://images.pexels.com/photos/1683545/pexels-photo-1683545.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       "id": "8",
       "name": "Eggs",
       "category": "Dairy",
-      "price": 2.5,
+      "price": 250,
       "quantity": 200,
       "description": "Farm fresh eggs",
-      "image": "https://cdn.pixabay.com/photo/2020/03/05/07/26/egg-4903676_640.jpg"
+      "image": "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       "id": "9",
       "name": "Milk",
       "category": "Dairy",
-      "price": 1.5,
+      "price": 100,
       "quantity": 100,
       "description": "Fresh milk",
-      "image": "https://images.pexels.com/photos/5946717/pexels-photo-5946717.jpeg"
-    },
-    {
-      "id": "10",
-      "name": "Cheese",
-      "category": "Dairy",
-      "price": 3,
-      "quantity": 70,
-      "description": "Delicious feta cheese",
-      "image": "https://images.pexels.com/photos/306801/pexels-photo-306801.jpeg"
-    },
-    {
-      "id": "11",
-      "name": "cabbage",
-      "category": "Meat",
-      "price": 555,
-      "quantity": 56,
-      "description": "hhhh",
-      "image": ""
+      "image": "https://images.pexels.com/photos/799273/pexels-photo-799273.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
   ],
   "users": [
     {
-      "id": "1",
-      "username": "Johnoe",
-      "email": "john.doe@example.com",
-      "password": "password123"
+      "id": "0159",
+      "username": "rynesakara",
+      "email": "mbuthiaryne@gmail.com",
+      "password": "ryne"
     }
   ]
 }

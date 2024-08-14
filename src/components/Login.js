@@ -4,13 +4,13 @@ import { useOutletContext } from "react-router-dom";
 
 function Login() {
   const contextData = useOutletContext();
-  const [users, setUsers] = useState(null)
+  const [users, setUsers] = useState(null);
 
   useEffect(() => {
     fetch(`http://localhost:4000/users`)
-     .then((resp) => resp.json())
-     .then(data => setUsers(data))
-  }, [])
+      .then((resp) => resp.json())
+      .then((data) => setUsers(data));
+  }, []);
 
   const [formData, setFormData] = useState({
     username: "",
@@ -27,10 +27,20 @@ function Login() {
   function handleLogin(e) {
     e.preventDefault();
 
-    const authenticated = users.some(user => user.username === formData.username && user.password === formData.password);
-    
-     authenticated ? contextData.login(): console.error("Input the Correct Details")
+    const authenticated = users.some(
+      (user) =>
+        user.username === formData.username &&
+        user.password === formData.password
+    );
+
+    authenticated
+      ? contextData.login()
+      : console.error("Input the Correct Details");
   }
+
+  const handleGoBack = () => {
+    window.history.back();
+  };
 
   return (
     <div className="login">
@@ -50,12 +60,14 @@ function Login() {
           value={formData.password}
           onChange={handleChange}
         />
-         <button type="submit">Login</button>
-              
+        <button type="submit">Login</button>
       </form>
+
       <p>
-        Don't have an account? <Link to="/signup">Sign Up</Link>
+        Don't have an account?
+        <Link to="/signup">Sign Up</Link>
       </p>
+      <button onClick={handleGoBack}>Back</button>
     </div>
   );
 }

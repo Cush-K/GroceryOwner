@@ -12,14 +12,19 @@ function ItemCard() {
     .then((data) => setItems(data))
     .catch((error) => console.error(error));
 
+  const handleGoBack = () => {
+    window.history.back();
+  };
+
   return (
     <div className="item-card">
       <h1>{items.name}</h1>
       <img src={items.image} alt="product" />
-      <h2>Price: {items.price}</h2>
+      <h2>Price: Ksh. {items.price}</h2>
       <p>Description: {items.description}</p>
       <p>Category: {items.category}</p>
       <p>Quantity in Stock: {items.quantity}</p>
+      <button onClick={handleGoBack}>Back</button>
     </div>
   );
 }
