@@ -89,9 +89,18 @@
       "quantity": 70,
       "description": "Delicious feta cheese",
       "image": "https://images.pexels.com/photos/306801/pexels-photo-306801.jpeg"
+    },
+    {
+      "id": "11",
+      "name": "cabbage",
+      "category": "Meat",
+      "price": 555,
+      "quantity": 56,
+      "description": "hhhh",
+      "image": ""
     }
   ],
-  "users":[
+  "users": [
     {
       "id": "1",
       "username": "Johnoe",

@@ -45,10 +45,7 @@ code {
   color: black;
   border-radius: 3px;
 }
-.hero {
-  text-align: center;
-  color: black;
-}
+
 .navbar {
   background-color: #333;
   color: #fff;
@@ -99,4 +96,58 @@ code {
 
 .navbar button:hover {
   background-color: #d33;
+}
+
+/*styling the hero section */
+
+.hero {
+  color: black;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  background: url("https://media.istockphoto.com/id/1412723839/photo/online-buying-and-delivery-concept.jpg?s=612x612&w=0&k=20&c=GoPboEBhcm4AEsVPI7kgcD3lYIUABarVnp6_otsTHcY=");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.hero h1 {
+  margin-top: 150px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.hero-link {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.hero-link:hover {
+  background-color: #34c0eb;
+  color: white;
+}
+
+/*styling the login page */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightgreen;
+  padding: 20px;
+}
+.login h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
 }
