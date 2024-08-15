@@ -317,7 +317,7 @@ iframe {
   display: flex;
   justify-content: center;
 }
-form {
+.submitForm {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -329,11 +329,11 @@ form {
   align-self: center;
 }
 
-form label {
+.submitForm label {
   margin: 10px 0 5px;
 }
 
-form input, form select, form button {
+.submitForm input, .submitForm select, .submitForm button {
   padding: 10px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -341,13 +341,13 @@ form input, form select, form button {
   border-radius: 4px;
 }
 
-form button {
+.submitForm button {
   background-color: #4CAF50;
   color: white;
   cursor: pointer;
 }
 
-form button:hover {
+.submitForm button:hover {
   background-color: #45a049;
 }
 .product-list {

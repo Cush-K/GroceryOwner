@@ -48,7 +48,7 @@ function AddItem({ onAddItem, products }) {
     const uniqueCategories = getUniqueCategories(products);
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="submitForm" onSubmit={handleSubmit}>
             <h2>Add New Item</h2>
             <label htmlFor="name">Name</label>
             <input
