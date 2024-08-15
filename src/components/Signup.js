@@ -78,7 +78,6 @@ function Signup() {
         </form>
         <button onClick={handleGoBack}>Back</button>
       </div>
-      );
     </div>
   );
 }

@@ -80,6 +80,24 @@
       "quantity": 100,
       "description": "Fresh milk",
       "image": "https://images.pexels.com/photos/799273/pexels-photo-799273.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "10",
+      "name": "Cheese",
+      "category": "Dairy",
+      "price": 2000,
+      "quantity": 20,
+      "description": "A firm-textured cheese ",
+      "image": "https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "11",
+      "name": "Grapes",
+      "category": "Fruits",
+      "price": 190,
+      "quantity": 40,
+      "description": "Freshly picked grapes",
+      "image": "https://images.pexels.com/photos/1153655/pexels-photo-1153655.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
   ],
   "users": [
@@ -124,6 +142,12 @@
       "username": "",
       "email": "",
       "password": ""
+    },
+    {
+      "id": "dcca",
+      "username": "Kalvine",
+      "email": "yireyo1674@sablecc.com",
+      "password": "abcd"
     }
   ]
 }

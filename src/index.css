@@ -68,26 +68,32 @@ code {
 
 .hero {
   color: black;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
   border-radius: 10px;
   background: url("https://media.istockphoto.com/id/1412723839/photo/online-buying-and-delivery-concept.jpg?s=612x612&w=0&k=20&c=GoPboEBhcm4AEsVPI7kgcD3lYIUABarVnp6_otsTHcY=");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 85vh;
 }
 
 .hero h1 {
   font-size: 5rem;
-  margin-top: 400px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .hero p {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 .hero-link {
   display: inline-block;
   padding: 10px 20px;
+  margin: 0 2em;
   color: black;
   background-color: #007bff;
   text-decoration: none;
@@ -206,9 +212,7 @@ code {
   background-color: #5a6268;
 }
 /* styling for signup*/
-/* Signup.css */
 
-/* Signup.css */
 .signup-container {
   background: url("https://redpithemes.com/Documentation/assets/img/page_bg/page_bg_blur02.jpg");
   background-size: cover;

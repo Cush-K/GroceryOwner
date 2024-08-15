@@ -7,12 +7,15 @@ function Hero() {
       <div className="hero">
         <h1>Welcome to FreshMart Store</h1>
         <p>Discover the latest and greatest products at our store!</p>
-        <Link to="/signup" className="sign-link">
-          Sign UP
-        </Link>
-        <Link to="/login" className="hero-link">
-          Login
-        </Link>
+        <div>
+          <Link to="/signup" className="hero-link">
+            Sign Up
+          </Link>
+          <Link to="/login" className="hero-link">
+            Login
+          </Link>
+        </div>
+
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ function Seller() {
   return (
     <div className="seller-container">
       <NavBar logout={onLogOut} />
-      <h1 className="heading">/Seller Dashboard</h1>
+      <h1 className="heading">Seller Dashboard</h1>
 
       <div className="additemsdiv">
         <h2>Add New Product:</h2>
