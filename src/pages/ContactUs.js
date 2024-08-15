@@ -12,7 +12,7 @@ function ContactUs() {
     <div>
       <NavBar logout={onLogOut} />
       <div>
-        <h1>Find Us</h1>
+        <h1 className="heading">/Find Us</h1>
       </div>
       <div>
         <iframe

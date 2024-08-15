@@ -6,6 +6,7 @@ import { useOutletContext } from "react-router-dom";
 
 function Seller() {
   const [products, setProducts] = useState([]);
+  const [showForm, setShowForm] = useState(false);
   const contextData = useOutletContext();
 
   function onLogOut() {
@@ -32,27 +33,45 @@ function Seller() {
     });
   }
 
+  function toggleForm() {
+    setShowForm(!showForm);
+  }
+
   return (
-    <div>
+    <div className="seller-container">
       <NavBar logout={onLogOut} />
-      <h1>Seller Dashboard</h1>
-      <AddItem onAddItem={handleAddItem} products={products} />
-      <div>
-        <h2>Existing Products</h2>
+      <h1 className="heading">/Seller Dashboard</h1>
+
+      <div className="additemsdiv">
+        <h2>Add New Product:</h2>
+        <button type="button" className="addItemBtn" onClick={toggleForm}>{showForm ? "Close Form" : "Add Item"}</button>
+      </div>
+
+      <div className="formdisplay">
+        {showForm && <AddItem 
+          onAddItem={handleAddItem} 
+          products={products} /
+        >}
+      </div>
+
+      <h2>Existing Products:</h2>
+
+      <div className="product-list">
         {products.map((product) => (
-          <div key={product.id}>
+          <div key={product.id} className="product-card">
+            <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>Category: {product.category}</p>
             <p>Price: {product.price}</p>
             <p>Quantity: {product.quantity}</p>
             <p>Description: {product.description}</p>
-            {/* <img src={product.image} alt={product.name} /> */}
             <button onClick={() => handleDelete(product.id)}>
-              Delete item
+              Delete Item
             </button>
           </div>
         ))}
       </div>
+
       <Footer />
     </div>
   );

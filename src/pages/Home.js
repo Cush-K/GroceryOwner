@@ -23,7 +23,7 @@ function Home() {
     <div className="home-container">
       <NavBar logout={onLogOut} />
       <div>
-        <h1>Home</h1>
+        <h1 className="heading">/Home</h1>
         <div className="App">
           {products.map((product) => (
             <ItemList

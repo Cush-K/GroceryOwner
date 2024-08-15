@@ -108,7 +108,7 @@ function AddItem({ onAddItem, products }) {
                 onChange={(e) => setImage(e.target.value)}
             />
 
-            <button type="submit">Add Item</button>
+            <button type="submit" >Add Item</button>
         </form>
 
     )

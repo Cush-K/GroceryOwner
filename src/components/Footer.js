@@ -15,7 +15,7 @@ function Footer() {
       </div>
       <div className="footer-section">
         <h3>Contact us</h3>
-        <p>located along Kenyatta ave(Opp.MKU towers)</p>
+        <p>Located along Kenyatta Ave. (Opp.MKU towers)</p>
         <p>
           <strong>Telephone:</strong> (254) 456-7890
         </p>

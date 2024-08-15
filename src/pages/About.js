@@ -12,7 +12,7 @@ function About() {
     <div>
       <NavBar logout={onLogOut} />
       <div className="about-container">
-        <h1 className="about-title">About Us</h1>
+        <h1 className="heading">/About Us</h1>
         <div className="about-content">
           <div>
             <img
@@ -41,9 +41,10 @@ function About() {
             />
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
+
   );
 }
 
