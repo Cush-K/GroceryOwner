@@ -94,6 +94,36 @@
       "username": "Kalvine",
       "email": "myemail@example.com",
       "password": "1234"
+    },
+    {
+      "id": "d32c",
+      "username": "rynesakara",
+      "email": "mbuthiaryne@gmail.com",
+      "password": "ryne"
+    },
+    {
+      "id": "c5ea",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "53b7",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "3fa7",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "dac1",
+      "username": "",
+      "email": "",
+      "password": ""
     }
   ]
 }

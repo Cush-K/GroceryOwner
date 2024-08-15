@@ -44,38 +44,41 @@ function Signup() {
   };
 
   return (
-    <div className="signup">
-      <h1>Signup</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Username"
-          name="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
+    <div className="signup-container">
+      <div className="signup">
+        <h1>Signup</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Username"
+            name="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
 
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-        <input
-          type="password"
-          placeholder="Password"
-          name="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-        <button type="submit" onClick={() => signup.login()}>
-          Signup
-        </button>
-      </form>
-      <button onClick={handleGoBack}>Back</button>
+          <button type="submit" onClick={() => signup.login()}>
+            Signup
+          </button>
+        </form>
+        <button onClick={handleGoBack}>Back</button>
+      </div>
+      );
     </div>
   );
 }
