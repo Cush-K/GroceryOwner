@@ -35,7 +35,7 @@ function Login() {
 
     authenticated
       ? contextData.login()
-      : console.error("Input the Correct Details");
+      : alert("Input the Correct Details");
   }
 
   const handleGoBack = () => {
