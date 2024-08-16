@@ -50,8 +50,9 @@ function Seller() {
       <div className="formdisplay">
         {showForm && <AddItem 
           onAddItem={handleAddItem} 
-          products={products} /
-        >}
+          products={products} 
+        />
+        }
       </div>
 
       <h2>Existing Products:</h2>
