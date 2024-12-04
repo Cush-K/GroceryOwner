@@ -72,14 +72,15 @@ def post(self):
     print("Incoming data:", data)
 
     # Validate data
-    if not all(key in data for key in ('name', 'description', 'price', 'quantity', 'image')):
+    if not all(key in data for key in ('name', 'category', 'price','quantity','description','image')):
         return {"error": "Missing required fields"}, 400
 
     new_product = Product(
         name=data['name'],
-        description=data['description'],
+        category=data['category'],
         price=data['price'],
         quantity=data['quantity'],
+        description=data['description'],
         image=data['image']
     )
 
