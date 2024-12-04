@@ -12,7 +12,6 @@ function AddItem({ onAddItem, products }) {
     function handleSubmit(e) {
         e.preventDefault();
         const newItem = {
-            id: (products.length + 1).toString(),
             name: name,
             category: category,
             price: parseFloat(price),
