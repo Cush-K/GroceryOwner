@@ -4,18 +4,28 @@ import { useOutletContext } from "react-router-dom";
 
 function Login() {
   const contextData = useOutletContext();
-  const [users, setUsers] = useState(null);
-
-  useEffect(() => {
-    fetch(`http://localhost:4000/users`)
-      .then((resp) => resp.json())
-      .then((data) => setUsers(data));
-  }, []);
-
+  const [users, setUsers] = useState([]);
   const [formData, setFormData] = useState({
     username: "",
     password: "",
   });
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:5555/api/userinfo")
+      .then((resp) => {
+        if (!resp.ok) {
+          throw new Error("Failed to fetch user data");
+        }
+        return resp.json();
+      })
+      .then((data) => {
+        setUsers(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching users:", error);
+        alert("Failed to load user data. Please try again later.");
+      });
+  }, []);
 
   function handleChange(e) {
     setFormData({
@@ -27,15 +37,24 @@ function Login() {
   function handleLogin(e) {
     e.preventDefault();
 
-    const authenticated = users.some(
-      (user) =>
-        user.username === formData.username &&
-        user.password === formData.password
-    );
+    if (users.length === 0) {
+      alert("User data is not loaded yet. Please try again later.");
+      return;
+    }
 
-    authenticated
-      ? contextData.login()
-      : alert("Input the Correct Details");
+    const authenticated = users.some((user) => {
+      const usernameMatch =
+        user.username.trim().toLowerCase() === formData.username.trim().toLowerCase();
+      const passwordMatch = user.password === formData.password;
+
+      return usernameMatch && passwordMatch;
+    });
+
+    if (authenticated) {
+      contextData.login();
+    } else {
+      alert("Incorrect username or password. Please try again.");
+    }
   }
 
   const handleGoBack = () => {

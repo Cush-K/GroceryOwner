@@ -3,7 +3,7 @@ import React, { useState } from "react"
 function AddItem({ onAddItem, products }) {
     const [name, setName] = useState('')
     const [category, setCategory] = useState('Select Category')
-    const [price, setPrice] = useState()
+    const [price, setPrice] = useState('')
     const [quantity, setQuantity] = useState('')
     const [description, setDescription] = useState('')
     const [image, setImage] = useState('')
@@ -21,7 +21,7 @@ function AddItem({ onAddItem, products }) {
             image: image,
         };
 
-        fetch('http://localhost:4000/products', {
+        fetch(`http://127.0.0.1:5555/api/products`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

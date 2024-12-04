@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { useOutletContext } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Signup() {
-  const signup = useOutletContext();
   const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    fetch(`http://localhost:4000/users`)
-      .then((resp) => resp.json())
-      .then((data) => setUsers(data))
-      .catch((error) => console.error(error));
-  }, []);
-
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -24,7 +16,7 @@ function Signup() {
       password: password,
     };
 
-    fetch("http://localhost:4000/users", {
+    fetch("http://127.0.0.1:5555/api/userinfo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,6 +30,7 @@ function Signup() {
     setUsername("");
     setPassword("");
     setEmail("");
+    navigate("/login");
   }
   const handleGoBack = () => {
     window.history.back();
@@ -72,7 +65,7 @@ function Signup() {
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <button type="submit" onClick={() => signup.login()}>
+          <button type="submit">
             Signup
           </button>
         </form>

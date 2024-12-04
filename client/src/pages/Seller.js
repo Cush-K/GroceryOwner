@@ -14,7 +14,7 @@ function Seller() {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:4000/products`)
+    fetch(`http://127.0.0.1:5555/api/products`)
       .then((resp) => resp.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error(error));
@@ -25,7 +25,7 @@ function Seller() {
   }
 
   function handleDelete(id) {
-    fetch(`http://localhost:4000/products/${id}`, {
+    fetch(`http://127.0.0.1:5555/api/products/${id}`, {
       method: "DELETE",
     }).then(() => {
       const updatedProducts = products.filter((product) => product.id !== id);
