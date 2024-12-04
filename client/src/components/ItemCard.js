@@ -7,7 +7,7 @@ function ItemCard() {
   const [items, setItems] = useState({});
   const itemId = params.id;
 
-  fetch(`http://127.0.0.1:5555/api/products/${itemId}`)
+  fetch(`/api/products/${itemId}`)
     .then((resp) => resp.json())
     .then((data) => setItems(data))
     .catch((error) => console.error(error));

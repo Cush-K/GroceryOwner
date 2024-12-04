@@ -21,7 +21,7 @@ function AddItem({ onAddItem, products }) {
             image: image,
         };
 
-        fetch(`http://127.0.0.1:5555/api/products`, {
+        fetch(`/api/products`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

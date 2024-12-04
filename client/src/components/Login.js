@@ -11,7 +11,7 @@ function Login() {
   });
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5555/api/userinfo")
+    fetch("/api/userinfo")
       .then((resp) => {
         if (!resp.ok) {
           throw new Error("Failed to fetch user data");
