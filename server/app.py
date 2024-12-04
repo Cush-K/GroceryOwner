@@ -65,24 +65,34 @@ class Products(Resource):
         products_dict = [product.to_dict() for product in Product.query.all()]
         return make_response(products_dict, 200)
     
-    def post(self):
-        data = request.get_json()
-        
-        new_product = Product(
-            name = data['name'],
-            description = data['description'],
-            price = data['price'],
-            quantity = data['quantity'],
-            image = data['image']
-        )
-        
-        try:
-            db.session.add(new_product)
-            db.session.commit()
-            return (new_product.to_dict()), 201
-        except Exception as e:
-            db.session.rollback()
-            return {"error": str(e)}, 500
+def post(self):
+    data = request.get_json()
+
+    # Debugging: Log the incoming data
+    print("Incoming data:", data)
+
+    # Validate data
+    if not all(key in data for key in ('name', 'description', 'price', 'quantity', 'image')):
+        return {"error": "Missing required fields"}, 400
+
+    new_product = Product(
+        name=data['name'],
+        description=data['description'],
+        price=data['price'],
+        quantity=data['quantity'],
+        image=data['image']
+    )
+
+    try:
+        db.session.add(new_product)
+        db.session.commit()
+        return (new_product.to_dict()), 201
+    except Exception as e:
+        # Log the error for debugging
+        print(f"Error occurred: {e}")
+        db.session.rollback()
+        return {"error": str(e)}, 500
+
         
 class ProductsById(Resource):
     def get(self, id):
