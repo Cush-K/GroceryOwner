@@ -11,7 +11,6 @@ with app.app_context():
     
     products = [
         {
-            "id": 1,
             "name": "Apples",
             "category": "Fruits",
             "price": 250,
@@ -20,7 +19,6 @@ with app.app_context():
             "image": "https://images.pexels.com/photos/574919/pexels-photo-574919.jpeg",
         },
         {
-            "id": 2,
             "name": "Potatoes",
             "category": "Fruits",
             "price": 400,
@@ -29,7 +27,6 @@ with app.app_context():
             "image": "https://cdn.pixabay.com/photo/2019/07/12/02/19/potatoes-4331742_1280.jpg",
         },
         {
-            "id": 3,
             "name": "Oranges",
             "category": "Fruits",
             "price": 180,
@@ -38,7 +35,6 @@ with app.app_context():
             "image": "https://images.pexels.com/photos/2135677/pexels-photo-2135677.jpeg",
         },
         {
-            "id": 4,
             "name": "Carrots",
             "category": "Vegetables",
             "price": 350,
@@ -47,7 +43,6 @@ with app.app_context():
             "image": "https://images.pexels.com/photos/3650647/pexels-photo-3650647.jpeg",
         },
         {
-            "id": 5,
             "name": "Bananas",
             "category": "Vegetables",
             "price": 300,
@@ -56,7 +51,6 @@ with app.app_context():
             "image": "https://media.istockphoto.com/id/1494763483/photo/banana-concept.jpg?s=2048x2048&w=is&k=20&c=oz3Xd4SKjKrMrc2JX0pqworegOshV9YMl2GUbpVI338=",
         },
         {
-            "id": 6,
             "name": "Chicken Breast",
             "category": "Meat",
             "price": 500,
@@ -65,7 +59,6 @@ with app.app_context():
             "image": "https://images.pexels.com/photos/3688/food-dinner-lunch-chicken.jpg?auto=compress&cs=tinysrgb&w=600",
         },
         {
-            "id": 7,
             "name": "Salmon",
             "category": "Seafood",
             "price": 1000,
@@ -74,7 +67,6 @@ with app.app_context():
             "image": "https://images.pexels.com/photos/1683545/pexels-photo-1683545.jpeg?auto=compress&cs=tinysrgb&w=600",
         },
         {
-            "id": 8,
             "name": "Eggs",
             "category": "Dairy",
             "price": 250,
@@ -83,7 +75,6 @@ with app.app_context():
             "image": "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg?auto=compress&cs=tinysrgb&w=600",
         },
         {
-            "id": 9,
             "name": "Milk",
             "category": "Dairy",
             "price": 100,
@@ -92,7 +83,6 @@ with app.app_context():
             "image": "https://images.pexels.com/photos/799273/pexels-photo-799273.jpeg?auto=compress&cs=tinysrgb&w=600",
         },
         {
-            "id": 10,
             "name": "Cheese",
             "category": "Dairy",
             "price": 2000,
@@ -101,7 +91,6 @@ with app.app_context():
             "image": "https://images.pexels.com/photos/821365/pexels-photo-821365.jpeg?auto=compress&cs=tinysrgb&w=600",
         },
         {
-            "id": 11,
             "name": "Grapes",
             "category": "Fruits",
             "price": 190,
@@ -113,7 +102,6 @@ with app.app_context():
 
     for product_data in products:
             product = Product(
-                id=product_data["id"],
                 name=product_data["name"],
                 category=product_data["category"],
                 price=product_data["price"],

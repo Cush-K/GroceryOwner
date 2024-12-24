@@ -12,7 +12,7 @@ load_dotenv()
 
 app = Flask(__name__, static_folder='../client/build', static_url_path="")
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI') #"sqlite:///app.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL') #"sqlite:///app.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
